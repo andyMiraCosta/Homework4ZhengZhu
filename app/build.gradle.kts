@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.packt.chapterseven"
+    namespace = "com.kangengineering.chapterseven"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.packt.chapterseven"
+        applicationId = "com.kangengineering.chapterseven"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
