@@ -1,4 +1,4 @@
-package com.kangengineering.chapterseven.views
+package com.kangengineering.chapterseven.views.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

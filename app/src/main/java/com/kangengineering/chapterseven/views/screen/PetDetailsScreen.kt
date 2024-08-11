@@ -1,4 +1,4 @@
-package com.kangengineering.chapterseven.views
+package com.kangengineering.chapterseven.views.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -35,7 +35,7 @@ fun PetDetailsScreen(onBackPressed: () -> Unit, cat: Cat) {
                 title = {
                     Text(text = "Pet Details")
                 },
-                colors = TopAppBarDefaults.smallTopAppBarColors(
+                colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primary,
                 ),
                 navigationIcon = {

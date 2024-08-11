@@ -1,4 +1,4 @@
-package com.kangengineering.chapterseven.views
+package com.kangengineering.chapterseven.views.screen
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
@@ -8,6 +8,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.kangengineering.chapterseven.data.Cat
 import com.kangengineering.chapterseven.navigation.ContentType
 import com.kangengineering.chapterseven.viewmodel.PetsViewModel
+import com.kangengineering.chapterseven.views.PetsScreenContent
 import org.koin.androidx.compose.koinViewModel
 
 @Composable

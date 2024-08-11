@@ -1,10 +1,9 @@
 package com.kangengineering.chapterseven
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ModalDrawerSheet
@@ -17,9 +16,7 @@ import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
@@ -35,15 +32,12 @@ import com.kangengineering.chapterseven.navigation.Screens
 import com.kangengineering.chapterseven.navigation.isBookPosture
 import com.kangengineering.chapterseven.navigation.isSeparating
 import com.kangengineering.chapterseven.ui.theme.ChapterSevenTheme
-import com.kangengineering.chapterseven.views.PetList
 import com.kangengineering.chapterseven.views.PetsNavigationDrawer
-import com.kangengineering.chapterseven.views.PetsScreen
+import com.kangengineering.chapterseven.views.screen.PetsScreen
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
-import kotlinx.serialization.encodeToString
-import kotlinx.serialization.json.Json
 import org.koin.compose.KoinApplication
 
 class MainActivity : ComponentActivity() {
@@ -159,7 +153,9 @@ class MainActivity : ComponentActivity() {
                                     },
                                     onDrawerClicked = {
                                         scope.launch {
+
                                             drawerState.close()
+
                                         }
                                     }
                                 )
@@ -180,6 +176,7 @@ class MainActivity : ComponentActivity() {
                             onDrawerClicked = {
                                 scope.launch {
                                     drawerState.open()
+                                    Toast.makeText(this@MainActivity, "Only used when app shown in tablet in vertical mode", Toast.LENGTH_SHORT).show()
                                 }
                             }
                         )

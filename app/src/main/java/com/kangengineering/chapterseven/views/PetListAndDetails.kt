@@ -12,6 +12,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.kangengineering.chapterseven.data.Cat
+import com.kangengineering.chapterseven.views.screen.PetDetailsScreenContent
 
 @Composable
 fun PetListAndDetails(pets: List<Cat>) {

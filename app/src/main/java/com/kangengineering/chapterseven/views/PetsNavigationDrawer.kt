@@ -48,7 +48,7 @@ fun PetsNavigationDrawer(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
-                text = "Chapter Seven",
+                text = "Pets - Cats",
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.primary
             )

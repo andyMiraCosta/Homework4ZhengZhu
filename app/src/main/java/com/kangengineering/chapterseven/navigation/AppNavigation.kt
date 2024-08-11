@@ -7,9 +7,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.kangengineering.chapterseven.views.FavoritePetsScreen
-import com.kangengineering.chapterseven.views.PetDetailsScreen
-import com.kangengineering.chapterseven.views.PetsScreen
+import com.kangengineering.chapterseven.views.screen.FavoritePetsScreen
+import com.kangengineering.chapterseven.views.screen.PetDetailsScreen
+import com.kangengineering.chapterseven.views.screen.PetsScreen
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 
